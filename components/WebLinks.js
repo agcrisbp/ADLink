@@ -175,7 +175,7 @@ const Links = () => {
         </TopPart>
         <BottomPart>
           <LinkFoot>
-            <h4>Powered by <a href="https://bit.ly/ADLink-Docs">ADLink</a>.</h4>
+            <h4>Powered by <a href="https://bit.ly/ADLink-Docs" target="_blank">ADLink</a>.</h4>
           </LinkFoot>
         </BottomPart>
 
