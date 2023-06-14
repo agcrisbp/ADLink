@@ -1,10 +1,10 @@
 const bioData = [
     {
         name: 'Your Name',
-        titleImg: true, //set to fale to hide the image and show your name
+        titleImg: true, //set to false to hide the image and show your name
         online: true,
         url: '#', //redirect when someone click your online status
-        avatar: '/favicon.ico',
+        avatar: '/favicon.ico', //put your profile photo to public folder
         nftAvatar: true,
         description: 'About You',
         descShow: true,

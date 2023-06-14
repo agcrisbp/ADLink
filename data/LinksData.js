@@ -68,7 +68,7 @@ const webLinks = [
         on: true
     },
     
-    //Add New Section remove the /** until **/
+    //Add New Section remove /** and **/
     /**{
         title: 'Blog',
         url: 'https://example.com',
