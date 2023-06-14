@@ -1,7 +1,7 @@
 ![Logo](public/logo.png)
 
-## About
-- A perfect custom alternative for LinkTree, BioLink, etc.
+## Documentation
+Read: [ADLink Documentation](https://bit.ly/ADLink-Docs).
 
 ## Getting Started
 - [Fork this repository](https://github.com/agcrisbp/ADLink/fork) or clone:
@@ -44,9 +44,6 @@ yarn build
 ```bash
 yarn start
 ```
-
-## Documentation
-[ADLink Documentation](https://bit.ly/ADLink-Docs)
 
 ---
 
