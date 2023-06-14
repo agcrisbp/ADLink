@@ -3,6 +3,8 @@
 ## Documentation
 Read: [ADLink Documentation](https://bit.ly/ADLink-Docs).
 
+---
+
 ## Getting Started
 - [Fork this repository](https://github.com/agcrisbp/ADLink/fork) or clone:
 
@@ -17,6 +19,8 @@ yarn install
 ```bash
 yarn create next-app your-app-name -e https://github.com/agcrisbp/ADLink
 ```
+
+---
 
 ## Start Development
 > Use any editor to work on editing. See: [App To Use](https://adlink.agcrisbp.my.id/en/docs/app-to-use).
