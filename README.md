@@ -1,7 +1,9 @@
 ![Logo](public/logo.png)
 
 ## Documentation
-Read: [ADLink Documentation](https://bit.ly/ADLink-Docs).
+A perfect custom alternative for LinkTree, BioLink, etc.
+
+- Read: [ADLink Documentation](https://bit.ly/ADLink-Docs).
 
 ---
 
