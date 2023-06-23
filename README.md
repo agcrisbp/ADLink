@@ -1,13 +1,20 @@
 ![Logo](public/logo.png)
 
-## Documentation
+### Documentation
 A perfect custom alternative for LinkTree, BioLink, etc.
 
 - Read: [ADLink Documentation](https://bit.ly/ADLink-Docs).
 
 ---
 
-## Getting Started
+### Support
+<a href="https://www.buymeacoffee.com/agcrisbp" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 32px !important;width: 114px !important;" ></a>
+<a href="https://saweria.co/agcrisbp" target="_blank"><img src="https://aghea.site/saweria-button.png" alt="Saweria" style="height: 30px !important;width: 114px !important;" ></a>
+<a href="https://github.com/sponsors/agcrisbp" target="_blank"><img src="https://raw.githubusercontent.com/agcrisbp/blog/f7c9c786bff7f064c7e9397a720c49e5112117e8/public/sponsor-badge.svg" alt="Github Sponsor" style="height: 30px !important;width: 114px !important;" ></a>
+
+---
+
+### Getting Started
 - [Fork this repository](https://github.com/agcrisbp/ADLink/fork) or clone:
 
 ```bash
@@ -24,7 +31,7 @@ yarn create next-app your-app-name -e https://github.com/agcrisbp/ADLink
 
 ---
 
-## Start Development
+### Start Development
 > Use any editor to work on editing. See: [App To Use](https://adlink.agcrisbp.my.id/en/docs/app-to-use).
 
 - First, run the development server:
@@ -53,7 +60,7 @@ yarn start
 
 ---
 
-## BIG THANKS TO:
+### BIG THANKS TO:
 - [Lanyard](https://github.com/Phineas/lanyard).
 - [Spotify Github Profile](https://github.com/kittinan/spotify-github-profile).
 - [Twitter oEmbed APi](https://developer.twitter.com/en/docs/twitter-for-websites/timelines/guides/oembed-api).
