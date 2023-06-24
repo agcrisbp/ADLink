@@ -1,7 +1,6 @@
 export default {
     openGraph: {
         type: 'website',
-        locale: 'en_IE',
         title: 'Your Name',
         url: 'Your Website URL with https',
         description: 'About you.',
