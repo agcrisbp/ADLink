@@ -1,5 +1,9 @@
 ![Logo](public/logo.png)
 
+<p align="center">
+    <img alt="ViewCount" src="https://views.whatilearened.today/views/github/agcrisbp/github-clone-count-badge.svg">
+</p>
+
 ### Documentation
 A perfect custom alternative for LinkTree, BioLink, etc.
 
