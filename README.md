@@ -1,7 +1,7 @@
 ![Logo](public/logo.png)
 
 <p align="center">
-    <img alt="ViewCount" src="https://views.whatilearened.today/views/github/agcrisbp/github-clone-count-badge.svg">
+    <img alt="ViewCount" src="https://views.whatilearened.today/views/github/agcrisbp/ADLink.svg">
 </p>
 
 ### Documentation
