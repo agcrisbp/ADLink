@@ -6,7 +6,7 @@
 </p>
 
 ### Documentation
-A perfect custom alternative for LinkTree, BioLink, etc.
+A perfect custom landing page for your links on the world wide web.
 
 - Read: [ADLink Documentation](https://bit.ly/ADLink-Docs).
 
