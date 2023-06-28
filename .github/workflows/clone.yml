@@ -48,7 +48,7 @@ jobs:
 
       - name: update clone.json
         run: |
-          curl https://raw.githubusercontent.com/agcrisbp/ADResume/master/main.py > main.py
+          curl https://raw.githubusercontent.com/agcrisbp/ADResume/main/main.py > main.py
           python3 main.py
 
       - name: Update gist with latest count
@@ -85,7 +85,7 @@ jobs:
           fi
 
       - name: Push
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           
