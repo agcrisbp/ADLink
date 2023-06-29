@@ -47,6 +47,11 @@ yarn dev
 
 - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+##### Example on Termux (Mobile)
+<video width="320" height="240" controls>
+  <source src="/public/termux.mp4" type="video/mp4">
+</video>
+
 ## Preview
 > To avoid failures due to errors or typo, it would be nice to do this step first before deploying to your website.
 
