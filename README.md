@@ -47,9 +47,6 @@ yarn dev
 
 - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-##### Example on Termux (Mobile)
-<iframe src="https://www.veed.io/embed/85c717e2-fd8c-4171-a99f-9db72c57b6f6" height="504" frameborder="0" title="termux" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-
 ## Preview
 > To avoid failures due to errors or typo, it would be nice to do this step first before deploying to your website.
 
