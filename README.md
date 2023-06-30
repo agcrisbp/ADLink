@@ -19,6 +19,14 @@ A perfect custom landing page for your links on the world wide web.
 
 ---
 
+### Quick Start
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/git?s=https://github.com/agcrisbp/ADLink)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/agcrisbp/ADLink)
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/Tb7sG5?referralCode=AkXLw2)
+
+---
+
 ### Getting Started
 - [Fork this repository](https://github.com/agcrisbp/ADLink/fork) or clone:
 
