@@ -13,7 +13,7 @@
   "dependencies": {
     "@react-three/fiber": "^8.13.4",
     "axios": "^1.4.0",
-    "framer-motion": "^10.12.17",
+    "framer-motion": "^10.12.18",
     "next": "^13.4.7",
     "next-seo": "^6.1.0",
     "nextjs-google-analytics": "^2.3.3",
@@ -30,8 +30,8 @@
     "yarn-upgrade-all": "^0.7.2"
   },
   "devDependencies": {
-    "@types/node": "20.3.2",
-    "eslint": "8.43.0",
+    "@types/node": "20.3.3",
+    "eslint": "8.44.0",
     "eslint-config-next": "13.4.7",
     "prettier": "^2.8.8",
     "typescript": "5.1.6"
