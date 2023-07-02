@@ -1,7 +1,7 @@
 ![Logo](public/logo.png)
 
 <p align="center">
-    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/agcrisbp/3b92952e19a3c35b245a495e1e7f075f/raw/f62968743f826233264fcb6da98d58e7492f3c04/clone.json&logo=github'>
+    <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Clone&query=count&url=https://gist.githubusercontent.com/agcrisbp/3b92952e19a3c35b245a495e1e7f075f/raw/b584b676eb05184bff166e6ea572949ba7f91b41/clone.json&logo=github'>
     <img alt='GitHub Clones' src='https://img.shields.io/badge/dynamic/json?color=success&label=Unique&query=uniques&url=https://gist.githubusercontent.com/agcrisbp/3b92952e19a3c35b245a495e1e7f075f/raw/f62968743f826233264fcb6da98d58e7492f3c04/clone.json&logo=githubactions'>
 </p>
 
