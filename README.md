@@ -38,7 +38,7 @@ yarn install
 - Or run the following command to create a new project with this template:
 
 ```bash
-yarn create next-app your-app-name -e https://github.com/agcrisbp/ADLink
+yarn create next-app YourAppName -e https://github.com/agcrisbp/ADLink
 ```
 
 ---
