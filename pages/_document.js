@@ -45,7 +45,6 @@ export default class MyDocument extends Document {
                     
                     <script async src="https://platform.twitter.com/widgets.js"
                     />
-
                 </Head>
                 <body>
 
