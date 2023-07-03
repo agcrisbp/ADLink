@@ -75,4 +75,3 @@ yarn start
 ### BIG THANKS TO:
 - [Lanyard](https://github.com/Phineas/lanyard).
 - [Spotify Github Profile](https://github.com/kittinan/spotify-github-profile).
-- [Twitter oEmbed APi](https://developer.twitter.com/en/docs/twitter-for-websites/timelines/guides/oembed-api).
