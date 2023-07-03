@@ -14,8 +14,8 @@ const bioData = [
         spotifyText: 'Recently Played',
         spotifyUrl: 'FIRST URL',
         spotifyImg: 'SECOND URL',
-        ig: false, //set to true to show
-        igUrl: '#', //add /embed after paste your profile or post link
+        ig: true, //set to true to show
+        igUrl: '#', //use https://www.instagram.com/ and add /embed after your username or post link
         tweet: false, //set to true to show
         tweetUrl: '#', //your Twitter profile URL
         tweetTheme: 'dark' //dark or light
