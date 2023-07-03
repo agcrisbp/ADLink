@@ -151,7 +151,7 @@ const Links = () => {
               
               <br />
               {(ig) ?
-                <iframe src={igUrl} width="100%" height="380" theme="dark" frameborder="0" scrolling="no" allowtransparency="true"></iframe> :''
+                <iframe src={igUrl} width="100%" height="380" frameborder="0" scrolling="yes" allowtransparency="true"></iframe> :''
               }
             </LinkSection>
             {/* Social Icon */}
