@@ -1,6 +1,13 @@
 const webLinks = [
     // All social profile
     {
+        title: 'Truth Social',
+        url: 'https://truthsocial.com/',
+        type: 'social',
+        icon: '/truth-social.svg',
+        on: true
+    },
+    {
         title: 'Twitter',
         url: 'https://twitter.com/',
         type: 'social',
