@@ -1,7 +1,7 @@
 const bioData = [
     {
         name: 'Your Name',
-        titleImg: true, //set to false to hide the image and show your name
+        titleImg: false,
         online: false,
         url: '#', //redirect when someone click your online status
         avatar: '/favicon.ico', //put your profile photo to public folder
@@ -10,13 +10,13 @@ const bioData = [
         descShow: true,
         subdesc: 'OPTIONAL',
         subdescShow: false,
-        spotify: true,
+        spotify: false, //set to true to show
         spotifyText: 'Recently Played',
         spotifyUrl: 'FIRST URL',
         spotifyImg: 'SECOND URL',
-        ig: true,
-        igUrl: 'https://www.instagram.com/instagram/embed', // add "/embed" after paste your link
-        tweet: false,
+        ig: false, //set to true to show
+        igUrl: '#', //add /embed after paste your profile or post link
+        tweet: false, //set to true to show
         tweetUrl: '#', //your Twitter profile URL
         tweetTheme: 'dark' //dark or light
     },
