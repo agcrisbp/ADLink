@@ -22,6 +22,13 @@ const webLinks = [
         on: false
     },
     {
+        title: 'Threads',
+        url: 'https://threads.net/@YourUsername',
+        type: 'social',
+        icon: '/threads.svg',
+        on: false
+    },
+    {
         title: 'Medium',
         url: 'https://medium.com/',
         type: 'social',
