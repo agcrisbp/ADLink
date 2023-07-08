@@ -13,7 +13,7 @@ A perfect custom landing page for your links on the world wide web.
 ---
 
 ### Add Your ADLink To Showcase
-- Read: [Showcase Submission](https://github.com/agcrisbp/ADLink-Docs/discussions/2).
+- Read: [Showcase Submission](https://github.com/agcrisbp/ADLink/discussions/1).
 
 ### Support
 <a href="https://www.buymeacoffee.com/agcrisbp" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="32px" width="114px"></a>
