@@ -12,7 +12,7 @@ A perfect custom landing page for your links on the world wide web.
 
 ---
 
-### Add Your Website To Showcase
+### Add Your ADLink To Showcase
 - Read: [Add Showcase](https://github.com/agcrisbp/ADLink-Docs/blob/main/README.md#add-your-site-to-showcase).
 
 ### Support
