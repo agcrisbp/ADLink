@@ -12,7 +12,7 @@ A perfect custom landing page for your links on the world wide web.
 
 ---
 
-### Add Your ADLink To Showcase
+### Add Your ADLink or ADResume To Showcase
 - Read: [Showcase Submission](https://github.com/agcrisbp/ADLink/discussions/1).
 
 ### Support
