@@ -130,7 +130,8 @@ const Links = () => {
                   />
                 </a> : ''
               }
-              <br/>
+              </LinkSection>
+              <LinkSection>
               <h3>{other[0].type}</h3>
               {
                 other.map((i) => {
@@ -143,7 +144,8 @@ const Links = () => {
                   )
                 })
               }
-              <br />
+              </LinkSection>
+              <LinkSection>
               {(tweet) ?
                 <a href={tweetUrl} target="_blank" rel="noreferrer" className="twitter-timeline" data-width="100%" data-theme={tweetTheme} data-chrome="noscrollbar nofooter noheader" data-tweet-limit="1" data-aria-polite="assertive"><h3>Loading Latest Tweet...</h3>
                 </a> :''
