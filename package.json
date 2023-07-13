@@ -11,7 +11,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "@react-three/fiber": "^8.13.4",
+    "@react-three/fiber": "^8.13.5",
     "@vercel/analytics": "^1.0.1",
     "axios": "^1.4.0",
     "framer-motion": "^10.12.18",
@@ -32,7 +32,7 @@
     "yarn-upgrade-all": "^0.7.2"
   },
   "devDependencies": {
-    "@types/node": "20.4.1",
+    "@types/node": "20.4.2",
     "eslint": "8.44.0",
     "eslint-config-next": "13.4.9",
     "prettier": "^3.0.0",

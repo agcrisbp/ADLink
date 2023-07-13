@@ -1,7 +1,3 @@
-// Weblinks Page Sections
-// created by @agcrisbp
-// date: 29 Jul, 2022
-
 import Image from "next/image";
 import styled from "styled-components";
 import { Button, ButtonLink, Container, StyledLink } from "./ReusableStyles";
