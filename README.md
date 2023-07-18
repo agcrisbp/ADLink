@@ -30,14 +30,7 @@ A perfect custom landing page for your links on the world wide web.
 ---
 
 ### Getting Started
-- [Fork this repository](https://github.com/agcrisbp/ADLink/fork) or clone:
-
-```bash
-git clone https://github.com/agcrisbp/ADLink &&
-cd ADLink &&
-yarn install
-```
-
+- [Fork this repository](https://github.com/agcrisbp/ADLink/fork).
 - Or run the following command to create a new project with this template:
 
 ```bash
