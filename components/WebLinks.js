@@ -31,10 +31,6 @@ const Links = () => {
   const descriptionText = descShow ? description : ``
   const subdescText = subdescShow ? subdesc : ``
   
-  const tweet = bioData[0].tweet;
-  const tweetUrl = bioData[0].tweetUrl;
-  const tweetTheme = bioData[0].tweetTheme
-  
   const ig = bioData[0].ig;
   const igUrl = bioData[0].igUrl;
   
@@ -142,12 +138,6 @@ const Links = () => {
               }
               </LinkSection>
               <LinkSection>
-              {(tweet) ?
-                <a href={tweetUrl} target="_blank" rel="noreferrer" className="twitter-timeline" data-width="100%" data-theme={tweetTheme} data-chrome="noscrollbar nofooter noheader" data-tweet-limit="1" data-aria-polite="assertive"><h3>Loading Latest Tweet...</h3>
-                </a> :''
-              }
-              
-              <br />
               {(ig) ?
                 <iframe src={igUrl} width="100%" height="380" frameborder="0" scrolling="yes" allowtransparency="true"></iframe> :''
               }
