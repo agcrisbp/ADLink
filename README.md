@@ -40,7 +40,7 @@ yarn create next-app app -e https://github.com/agcrisbp/ADLink
 ---
 
 ### Start Development
-> Use any editor to work on editing. See: [App To Use](https://adlink.agcrisbp.my.id/en/docs/app-to-use).
+> Use any editor to work on editing. See: [App To Use](https://adlink.agcrisbp.my.id/en/app-to-use).
 
 - First, run the development server:
 
