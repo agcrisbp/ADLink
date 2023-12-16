@@ -34,6 +34,9 @@ const Links = () => {
   const ig = bioData[0].ig;
   const igUrl = bioData[0].igUrl;
   
+  const twitter = bioData[0].twitter;
+  const twitterUrl = bioData[0].twitterUrl;
+  
   const spotify = bioData[0].spotify;
   const spotifyText = bioData[0].spotifyText;
   const spotifyUrl = bioData[0].spotifyUrl;
@@ -140,6 +143,12 @@ const Links = () => {
               <LinkSection>
               {(ig) ?
                 <iframe src={igUrl} width="100%" height="380" frameborder="0" scrolling="yes" allowtransparency="true"></iframe> :''
+              }
+            </LinkSection>
+            
+              <LinkSection>
+              {(twitter) ?
+                <a class="twitter-timeline" href={twitterUrl} data-width="300" data-height="300" data-chrome="transparent nofooter noborders" data-theme="dark" data-tweet-limit="1">Loading...</a> :''
               }
             </LinkSection>
             {/* Social Icon */}

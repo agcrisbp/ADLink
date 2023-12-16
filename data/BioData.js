@@ -16,6 +16,8 @@ const bioData = [
         spotifyImg: 'SECOND URL',
         ig: false, //set to true to show
         igUrl: '#', //use https://www.instagram.com/ and add /embed after your username or post link
+        twitter: true,
+        twitterUrl: 'https://twitter.com/crisminolog'
     },
 ];
 

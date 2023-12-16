@@ -18,7 +18,7 @@ export default function Seo({ page }) {
                     url: `${seoData.openGraph.url}`,
                     title: `${title}`,
                     description: `${seoData.openGraph.description}`,
-                    locale: 'en_EN',
+                    locale: 'id_ID',
                     images: [
                         {
                             width: 1200,
