@@ -8,7 +8,7 @@
 ### Documentation
 A perfect custom landing page for your links on the world wide web.
 
-- Read: [ADLink Documentation](https://bit.ly/ADLink-Docs).
+- Read: [ADLink Documentation](https://ad-link-docs.vercel.app/).
 
 ---
 
@@ -17,7 +17,7 @@ A perfect custom landing page for your links on the world wide web.
 
 ### Support
 <a href="https://www.buymeacoffee.com/agcrisbp" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="32px" width="114px"></a>
-<a href="https://saweria.co/agcrisbp" target="_blank"><img src="https://bio.aghea.site/saweria-button.png" alt="Saweria" height="32px" width="114px"></a>
+<a href="https://saweria.co/agcrisbp" target="_blank"><img src="https://bio.aghea.biz.id/saweria-button.png" alt="Saweria" height="32px" width="114px"></a>
 <a href="https://github.com/sponsors/agcrisbp" target="_blank"><img src="public/sponsor-badge.svg" alt="Github Sponsor" height="32px" width="114px"></a>
 
 ---
@@ -40,7 +40,7 @@ yarn create next-app app -e https://github.com/agcrisbp/ADLink
 ---
 
 ### Start Development
-> Use any editor to work on editing. See: [App To Use](https://adlink.agcrisbp.my.id/en/app-to-use).
+> Use any editor to work on editing. See: [App To Use](https://adlink.aghea.biz.id/en/app-to-use).
 
 - First, run the development server:
 
@@ -71,3 +71,4 @@ yarn start
 ### BIG THANKS TO:
 - [Lanyard](https://github.com/Phineas/lanyard).
 - [Spotify Github Profile](https://github.com/kittinan/spotify-github-profile).
+- [bsky-embed](https://github.com/Vincenius/bsky-embed).
