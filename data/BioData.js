@@ -14,10 +14,15 @@ const bioData = [
         spotifyText: 'Recently Played',
         spotifyUrl: 'FIRST URL',
         spotifyImg: 'SECOND URL',
-        ig: false, //set to true to show
-        igUrl: '#', //use https://www.instagram.com/ and add /embed after your username or post link
-        twitter: true,
-        twitterUrl: 'https://twitter.com/crisminolog'
+        bsky: true,
+        bskyUname: 'aghea.biz.id',
+        bskyTheme: 'light',
+        ig: true,
+        igUrl: 'https://www.instagram.com/instagram/embed/',
+        igPost: true,
+        igPostUrl: 'https://www.instagram.com/p/Ct16XZCpv7V/embed',
+        tweet: true,
+        tweetUrl: 'https://twitter.com/crisminolog?ref_src=twsrc%5Etfw',
     },
 ];
 

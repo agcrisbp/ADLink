@@ -42,6 +42,16 @@ export default class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap"
                         rel="stylesheet"
                     />
+                    
+                    
+                    <script async src="https://cdn.jsdelivr.net/npm/bsky-embed@0.1.5/dist/bsky-embed.es.js"
+                    />
+                    
+                    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5238358527901368"
+                    />
+                    
+                    <script async src="//www.instagram.com/embed.js"
+                    />
                 </Head>
                 <body>
 

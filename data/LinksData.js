@@ -1,17 +1,24 @@
 const webLinks = [
     // All social profile
     {
-        title: 'Truth Social',
-        url: 'https://truthsocial.com/',
-        type: 'social',
-        icon: '/truth-social.svg',
-        on: true
-    },
-    {
         title: 'Twitter',
         url: 'https://twitter.com/',
         type: 'social',
         icon: '/twitter.svg',
+        on: true
+    },
+    {
+        title: 'Discord',
+        url: 'https://aghea.biz.id/discord',
+        type: 'social',
+        icon: '/discord.svg',
+        on: true
+    },
+    {
+        title: 'Bluesky App',
+        url: 'http://bsky.aghea.biz.id',
+        type: 'social',
+        icon: '/bsky.svg',
         on: true
     },
     {
@@ -55,6 +62,13 @@ const webLinks = [
         type: 'social',
         icon: '/linkedin.svg',
         on: true
+    },
+    {
+        title: 'Truth Social',
+        url: 'https://truthsocial.com/',
+        type: 'social',
+        icon: '/truth-social.svg',
+        on: false
     },
     {
         title: 'Email',

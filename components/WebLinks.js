@@ -1,3 +1,7 @@
+// Weblinks Page Sections
+// created by @agcrisbp
+// date: 29 Jul, 2022
+
 import Image from "next/image";
 import styled from "styled-components";
 import { Button, ButtonLink, Container, StyledLink } from "./ReusableStyles";
@@ -31,11 +35,19 @@ const Links = () => {
   const descriptionText = descShow ? description : ``
   const subdescText = subdescShow ? subdesc : ``
   
+  const bsky = bioData[0].bsky;
+  const bskyUname = bioData[0].bskyUname;
+  const bskyTheme = bioData[0].bskyTheme;
+  
+  const tweet = bioData[0].tweet;
+  const tweetText = bioData[0].tweetText;
+  const tweetUrl = bioData[0].tweetUrl;
+  const tweetTheme = bioData[0].tweetTheme;
+  
   const ig = bioData[0].ig;
   const igUrl = bioData[0].igUrl;
-  
-  const twitter = bioData[0].twitter;
-  const twitterUrl = bioData[0].twitterUrl;
+  const igPost = bioData[0].igPost;
+  const igPostUrl = bioData[0].igPostUrl;
   
   const spotify = bioData[0].spotify;
   const spotifyText = bioData[0].spotifyText;
@@ -142,13 +154,44 @@ const Links = () => {
               </LinkSection>
               <LinkSection>
               {(ig) ?
-                <iframe src={igUrl} width="100%" height="380" frameborder="0" scrolling="yes" allowtransparency="true"></iframe> :''
+                <a><details>
+                <summary><h3>Instagram Profile</h3></summary>
+                <iframe src={igUrl} width="100%" height="380" theme="dark" frameborder="0" scrolling="yes" allowtransparency="true"><h3>Loading Instagram Profile...</h3></iframe>
+                </details></a>:''
+              }
+              </LinkSection>
+              <LinkSection>
+              {(igPost) ?
+                <a><details>
+                <summary><h3>Instagram Post</h3></summary>
+                <iframe src={igPostUrl} width="100%" height="380" theme="dark" frameborder="0" scrolling="yes" allowtransparency="true"><h3>Loading Instagram Profile...</h3></iframe>
+                </details></a>:''
               }
             </LinkSection>
-            
+            <LinkSection>
+              {(tweet) ?
+                <a><details>
+                <summary><h3>𝕏 Tweets</h3></summary>
+                <a class="twitter-timeline" href={tweetUrl} data-height="350" data-chrome="noheader nofooter noscrollbar" data-tweet-limit="1" data-theme={tweetTheme}>
+                </a></details></a> :''
+              }
+            </LinkSection>
               <LinkSection>
-              {(twitter) ?
-                <a class="twitter-timeline" href={twitterUrl} data-width="300" data-height="300" data-chrome="transparent nofooter noborders" data-theme="dark" data-tweet-limit="1">Loading...</a> :''
+              {(bsky) ?
+                <a><details>
+                <summary><h3>Bluesky Timeline</h3></summary>
+                <bsky-embed
+                  username={bskyUname}
+                  feed="at://...(decide between username, feed, or search)"
+                  search="#BuildInPublic (decide between username, feed, and search)"
+                  mode={bskyTheme}
+                  limit="1"
+                  link-target="_blank"
+                  link-image="true"
+                  load-more="true"
+                  custom-styles=".border-slate-300 { border-color: purple; }"
+                >
+                </bsky-embed> </details></a> :''
               }
             </LinkSection>
             {/* Social Icon */}
