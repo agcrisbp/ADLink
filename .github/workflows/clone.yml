@@ -12,8 +12,22 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
+      - name: Check last activity
+        id: check_activity
+        run: |
+          last_activity=$(curl -s -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/${{ github.repository }}/events | jq '.[0].created_at')
+          last_activity_timestamp=$(date -d "$last_activity" +%s)
+          current_timestamp=$(date +%s)
+          three_months_ago=$(date -d "3 months ago" +%s)
+          if [ "$last_activity_timestamp" -lt "$three_months_ago" ]; then
+            echo "::set-output name=no_activity::true"
+          else
+            echo "::set-output name=no_activity::false"
+          fi
+
       - name: gh login
         run: echo "${{ secrets.SECRET_TOKEN }}" | gh auth login --with-token
+        if: steps.check_activity.outputs.no_activity == 'true'
 
       - name: parse latest clone count
         run: |
