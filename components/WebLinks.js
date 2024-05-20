@@ -173,6 +173,9 @@ const Links = () => {
                 <a><details>
                 <summary><h3>𝕏 Tweets</h3></summary>
                 <a class="twitter-timeline" href={tweetUrl} data-height="350" data-chrome="noheader nofooter noscrollbar" data-tweet-limit="1" data-theme={tweetTheme}>
+                <LinkFoot><h4>
+                Loading...
+                </h4></LinkFoot>
                 </a></details></a> :''
               }
             </LinkSection>
