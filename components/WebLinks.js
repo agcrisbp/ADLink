@@ -6,10 +6,11 @@ import Image from "next/image";
 import styled from "styled-components";
 import { Button, ButtonLink, Container, StyledLink } from "./ReusableStyles";
 import Link from "next/link";
-import { ChevronRightIcon, HexIcon, HomeIcon, TwitterIcon, NewUp, OvalIcon } from './icons';
+import { HexIcon, HomeIcon, NewUp, OvalIcon } from './icons';
 import allLinks from "../data/LinksData";
 import bioData from "../data/BioData";
 import Online from "../components/Online";
+import { Icon } from '@iconify/react';
 
 
 
@@ -120,7 +121,7 @@ const Links = () => {
                     return (
                       <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
                         <LinkBox className="socialIcon">
-                          <img src={i.icon} style={{ filter: 'var(--img)' }} />
+                          <Icon icon={i.icon} height={20} width={20} style={{ filter: 'var(--icon)'}} />
                         </LinkBox>
                       </a>
                     )
@@ -145,7 +146,8 @@ const Links = () => {
                   return (
                     <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
                       <LinkBox>
-                        <LinkTitle><img src={i.icon} style={{ filter: 'var(--img)' }} /> {i.title}</LinkTitle> <NewUp />
+                        <LinkTitle>
+                          <Icon icon={i.icon} height={20} width={20} style={{ filter: 'var(--icon)', marginRight: '10px' }} /> {i.title}</LinkTitle> <NewUp />
                       </LinkBox>
                     </a>
                   )

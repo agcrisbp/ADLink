@@ -4,84 +4,70 @@ const webLinks = [
         title: 'Twitter',
         url: 'https://twitter.com/',
         type: 'social',
-        icon: '/twitter.svg',
+        icon: 'mdi:twitter',
         on: true
     },
     {
         title: 'Discord',
-        url: 'https://aghea.biz.id/discord',
+        url: 'https://aghea.vercel.app/discord',
         type: 'social',
-        icon: '/discord.svg',
-        on: true
-    },
-    {
-        title: 'Bluesky App',
-        url: 'http://bsky.aghea.biz.id',
-        type: 'social',
-        icon: '/bsky.svg',
+        icon: 'mdi:discord',
         on: true
     },
     {
         title: 'Instagram',
         url: 'https://instagram.com/',
         type: 'social',
-        icon: '/insta.svg',
+        icon: 'mdi:instagram',
         on: false
     },
     {
         title: 'Threads',
         url: 'https://threads.net/@YourUsername',
         type: 'social',
-        icon: '/threads.svg',
+        icon: 'ri:threads-line',
         on: false
     },
     {
         title: 'Medium',
         url: 'https://medium.com/',
         type: 'social',
-        icon: '/medium.svg',
+        icon: 'mdi:medium',
         on: false
     },
     {
         title: 'Youtube',
         url: 'https://youtube.com/',
         type: 'social',
-        icon: '/youtube.svg',
+        icon: 'mdi:youtube',
         on: true
     },
     {
         title: 'Github',
         url: 'https://github.com/',
         type: 'social',
-        icon: '/github.svg',
+        icon: 'mdi:github',
         on: true
     },
     {
         title: 'Linkedin',
         url: 'https://www.linkedin.com/in/',
         type: 'social',
-        icon: '/linkedin.svg',
+        icon: 'mdi:linkedin',
         on: true
-    },
-    {
-        title: 'Truth Social',
-        url: 'https://truthsocial.com/',
-        type: 'social',
-        icon: '/truth-social.svg',
-        on: false
     },
     {
         title: 'Email',
         url: 'mailto:YourEmail@email.com',
         type: 'social',
-        icon: '/email.png',
+        icon: 'mdi:email',
         on: true
     },
     {
         title: 'Post',
         url: 'https://www.post.news/',
         type: 'social',
-        icon: '/post.svg',
+        icon: 'arcticons:post',
         on: false
     },
     
@@ -90,9 +76,9 @@ const webLinks = [
 
     {
         title: 'Use this template',
-        url: 'https://bit.ly/ADLink-Docs',
+        url: 'https://adlink-docs.vercel.app',
         type: 'other',
-        icon: '/use.png',
+        icon: 'lucide:box',
         on: true
     },
     
@@ -101,7 +87,7 @@ const webLinks = [
         title: 'Blog',
         url: 'https://example.com',
         type: 'other',
-        icon: '/blog.png', //check all icons in public folder
+        icon: 'mdi:blog', //check all icons in public folder
         on: true
     }, **/
 ];

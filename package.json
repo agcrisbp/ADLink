@@ -11,6 +11,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@iconify/react": "^5.2.0",
     "@react-three/fiber": "^8.16.6",
     "@vercel/analytics": "^1.2.2",
     "axios": "^1.7.1",
