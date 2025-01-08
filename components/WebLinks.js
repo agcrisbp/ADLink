@@ -88,13 +88,14 @@ const Links = () => {
                 <img
                   src={avatarImg}
                   className={avatarShape}
+                  onContextMenu={(e) => e.preventDefault()}
                 />
               </AvatarWrap>
             </Avatar>
             <Title>
               {/* Using titleimg flag to use image as title or text */}
               {titleImg ?
-                <img src={titleImage} className="handle" /> :
+                <img src={titleImage} className="handle" onContextMenu={(e) => e.preventDefault()} /> :
                 <h1>{name}</h1>
               }
               {/* if your remove username from data it will not appear */}
@@ -121,7 +122,7 @@ const Links = () => {
                     return (
                       <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
                         <LinkBox className="socialIcon">
-                          <Icon icon={i.icon} height={20} width={20} style={{ filter: 'var(--icon)'}} />
+                          <Icon icon={i.icon} height={20} width={20} style={{ filter: 'var(--icon)'}} onContextMenu={(e) => e.preventDefault()} />
                         </LinkBox>
                       </a>
                     )
@@ -135,6 +136,7 @@ const Links = () => {
                   <img
                     src={`${spotifyImg}`}
                     className="custom"
+                    onContextMenu={(e) => e.preventDefault()}
                   />
                 </a> : ''
               }
@@ -147,7 +149,7 @@ const Links = () => {
                     <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
                       <LinkBox>
                         <LinkTitle>
-                          <Icon icon={i.icon} height={20} width={20} style={{ filter: 'var(--icon)', marginRight: '10px' }} /> {i.title}</LinkTitle> <NewUp />
+                          <Icon icon={i.icon} height={20} width={20} style={{ filter: 'var(--icon)', marginRight: '10px' }} onContextMenu={(e) => e.preventDefault()}/> {i.title}</LinkTitle> <NewUp />
                       </LinkBox>
                     </a>
                   )
@@ -211,7 +213,7 @@ const Links = () => {
                       return (
                         <a href={i.url} key={i.title} target="_blank" rel="noreferrer">
                           <LinkBox>
-                            <LinkTitle><img src={i.icon} style={{ filter: 'var(--img)' }} /> {i.title}</LinkTitle> <NewUp />
+                            <LinkTitle><img src={i.icon} style={{ filter: 'var(--img)' }} onContextMenu={(e) => e.preventDefault()} /> {i.title}</LinkTitle> <NewUp />
                           </LinkBox>
                         </a>
                       )
