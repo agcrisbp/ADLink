@@ -41,9 +41,8 @@ const Links = () => {
   const bskyTheme = bioData[0].bskyTheme;
   
   const tweet = bioData[0].tweet;
-  const tweetText = bioData[0].tweetText;
   const tweetUrl = bioData[0].tweetUrl;
-  const tweetTheme = bioData[0].tweetTheme;
+  const tweetId = tweetUrl ? tweetUrl.split("/").pop() : "";
   
   const ig = bioData[0].ig;
   const igUrl = bioData[0].igUrl;
@@ -171,34 +170,47 @@ const Links = () => {
                 <iframe src={igPostUrl} width="100%" height="380" theme="dark" frameborder="0" scrolling="yes" allowtransparency="true"><h3>Loading Instagram Profile...</h3></iframe>
                 </details></a>:''
               }
-            </LinkSection>
-            <LinkSection>
-              {(tweet) ?
-                <a><details>
-                <summary><h3>𝕏 Tweets</h3></summary>
-                <a class="twitter-timeline" href={tweetUrl} data-height="350" data-chrome="noheader nofooter noscrollbar" data-tweet-limit="1" data-theme={tweetTheme}>
-                <LinkFoot><h4>
-                Loading...
-                </h4></LinkFoot>
-                </a></details></a> :''
-              }
-            </LinkSection>
+              </LinkSection>
+              <LinkSection>
+                {tweet ? (
+                  <details>
+                    <summary><h3>𝕏 Tweets</h3></summary>
+                    {tweetId ? (
+                      <iframe
+                        src={`/tweet-embed?id=${tweetId}`}
+                        width="100%"
+                        height="380"
+                        theme="dark"
+                        frameborder="0"
+                        scrolling="yes"
+                        allowtransparency="true"
+                      />
+                    ) : (
+                      <h4>Loading...</h4>
+                    )}
+                  </details>
+                ) : null}
+              </LinkSection>
               <LinkSection>
               {(bsky) ?
                 <a><details>
                 <summary><h3>Bluesky Timeline</h3></summary>
-                <bsky-embed
-                  username={bskyUname}
-                  feed="at://...(decide between username, feed, or search)"
-                  search="#BuildInPublic (decide between username, feed, and search)"
-                  mode={bskyTheme}
-                  limit="1"
-                  link-target="_blank"
-                  link-image="true"
-                  load-more="true"
-                  custom-styles=".border-slate-300 { border-color: purple; }"
-                >
-                </bsky-embed> </details></a> :''
+                  <bsky-embed
+                    username={bskyUname}
+                    mode={bskyTheme}
+                    feed="at://...(decide between username, feed, or search)"
+                    search="#BuildInPublic (decide between username, feed, and search)"
+                    limit="1"
+                    link-target="_blank"
+                    link-image="true"
+                    load-more="true"
+                    custom-styles="
+                      * { text-align: left !important; }
+                      .text-center { text-align: left !important; }
+                      div { justify-content: flex-start !important; }
+                    "
+                  ></bsky-embed>
+                </details></a> :''
               }
             </LinkSection>
             {/* Social Icon */}

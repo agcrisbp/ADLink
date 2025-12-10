@@ -9,8 +9,9 @@ const Online = ({ section }) => {
   );
 
   console.log(data);
-  const [status] = useMemo(() => {
+  const [status] = useMemo((): [string] => {
     if (!data) return ["Loading"];
+  
     switch (data?.data?.discord_status) {
       case "online":
         return ["🟢 Online"];
@@ -22,6 +23,8 @@ const Online = ({ section }) => {
         return ["🟤 Offline"];
       case "streaming":
         return ["🟣 Streaming"];
+      default:
+        return ["Unknown"];
     }
   }, [data]);
 

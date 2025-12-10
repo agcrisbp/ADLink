@@ -29,7 +29,6 @@ function MyApp({ Component, pageProps }) {
                 <Head>
                     <meta content="width=device-width, initial-scale=1" name="viewport" />
                     <link rel="icon" href="/favicon.ico" />
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </Head>
                 <GlobalStyle />
                 <Layout>
