@@ -1,62 +1,29 @@
-// CHANGE next-seo.config.js
-
-import { NextSeo } from 'next-seo';
-import seoData from '../next-seo.config';
+import Head from 'next/head'
+import seoData from '../next-seo.config'
 
 export default function Seo({ page }) {
-    const { title, excerpt, slug, coverImage } = page;
-    return (
-        <>
-            <NextSeo
-                title={title}
-                titleTemplate={seoData.openGraph.title}
-                defaultTitle={seoData.openGraph.title}
-                description={seoData.openGraph.description}
-                canonical={seoData.openGraph.url}
-                openGraph={{
-                    type: 'website',
-                    url: `${seoData.openGraph.url}`,
-                    title: `${title}`,
-                    description: `${seoData.openGraph.description}`,
-                    locale: 'id_ID',
-                    images: [
-                        {
-                            width: 1200,
-                            height: 630,
-                            url: `${seoData.openGraph.images[0].url}`,
-                            alt: `${title}`,
-                        },
-                    ],
-                    site_name: 'Agcrismanto Budhi Praswastyka',
-                }}
-                twitter={{
-                    handle: '@agcrisbp',
-                    site: 'agcrisbp.my.id',
-                    cardType: 'summary_large_image',
-                }}
-                additionalMetaTags={[{
-                    name: 'keywords',
-                    content: `${seoData.openGraph.keywords}`
-                },
-                {
-                    name: 'twitter:image',
-                    content: `${seoData.openGraph.images[0].url}`
-                },
-                {
-                    httpEquiv: 'x-ua-compatible',
-                    content: 'IE=edge; chrome=1'
-                }]}
-                robotsProps={{
-                    nosnippet: false,
-                    notranslate: true,
-                    noimageindex: false,
-                    noarchive: false,
-                    notranslate: false,
-                    maxSnippet: -1,
-                    maxImagePreview: 'large',
-                    maxVideoPreview: -1,
-                }}
-            />
-        </>
-    );
+  const { title, excerpt, slug, coverImage } = page
+
+  return (
+    <Head>
+      <title>{title} | {seoData.openGraph.title}</title>
+      <meta name="description" content={seoData.openGraph.description} />
+      <meta name="keywords" content={seoData.openGraph.keywords} />
+      <link rel="canonical" href={seoData.openGraph.url} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={seoData.openGraph.url} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={seoData.openGraph.description} />
+      <meta property="og:locale" content="en_EN" />
+      <meta property="og:image" content={seoData.openGraph.images[0].url} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:site_name" content="Agcrismanto Budhi Praswastyka" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content="@agcrisbp" />
+      <meta name="twitter:creator" content="@agcrisbp" />
+      <meta name="twitter:image" content={seoData.openGraph.images[0].url} />
+      <meta httpEquiv="x-ua-compatible" content="IE=edge; chrome=1" />
+    </Head>
+  )
 }

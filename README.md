@@ -69,6 +69,6 @@ yarn start
 ---
 
 ### BIG THANKS TO:
-- [Lanyard](https://github.com/Phineas/lanyard).
+- [Charis Web Services](https://charisprod.xyz).
 - [Spotify Github Profile](https://github.com/kittinan/spotify-github-profile).
 - [bsky-embed](https://github.com/Vincenius/bsky-embed).
