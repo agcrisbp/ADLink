@@ -34,7 +34,7 @@ A perfect custom landing page for your links on the world wide web.
 - Or run the following command to create a new project with this template:
 
 ```bash
-yarn create next-app app -e https://github.com/agcrisbp/ADLink
+npx create-next-app@latest app --example https://github.com/agcrisbp/ADLink
 ```
 
 ---
@@ -45,7 +45,7 @@ yarn create next-app app -e https://github.com/agcrisbp/ADLink
 - First, run the development server:
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -55,7 +55,7 @@ yarn dev
 
 - Build your development.
 ```bash
-yarn build
+npm run build
 ```
 
 - If there are no issues, everything is ready to deploy.
@@ -63,7 +63,7 @@ yarn build
 - Or run the build preview using the following command:
 
 ```bash
-yarn start
+npm start
 ```
 
 ---
