@@ -11,6 +11,7 @@ import allLinks from "../data/LinksData";
 import bioData from "../data/BioData";
 import Online from "../components/Online";
 import { Icon } from '@iconify/react';
+import { InstagramEmbed, TwitterEmbed } from 'react-social-media-embed';
 
 
 
@@ -42,7 +43,6 @@ const Links = () => {
   
   const tweet = bioData[0].tweet;
   const tweetUrl = bioData[0].tweetUrl;
-  const tweetId = tweetUrl ? tweetUrl.split("/").pop() : "";
   
   const ig = bioData[0].ig;
   const igUrl = bioData[0].igUrl;
@@ -156,38 +156,55 @@ const Links = () => {
               }
               </LinkSection>
               <LinkSection>
-              {(ig) ?
-                <a><details>
-                <summary><h3>Instagram Profile</h3></summary>
-                <iframe src={igUrl} width="100%" height="380" theme="dark" frameborder="0" scrolling="yes" allowtransparency="true"><h3>Loading Instagram Profile...</h3></iframe>
-                </details></a>:''
-              }
+                {ig ? (
+                  <a>
+                    <details>
+                      <summary><h3>Instagram Profile</h3></summary>
+                      <div style={{ 
+                        textAlign: 'left', 
+                        maxHeight: '400px', 
+                        overflowY: 'auto', 
+                        borderRadius: '12px',
+                        background: 'transparent' 
+                      }}>
+                        <iframe 
+                          src={`${igUrl.replace(/\/$/, '')}/embed`} 
+                          width="100%" 
+                          height="450" 
+                          frameBorder="0" 
+                          scrolling="yes" 
+                          allowTransparency="true"
+                        >
+                          <h3>Loading Instagram Profile...</h3>
+                        </iframe>
+                      </div>
+                    </details>
+                  </a>
+                ) : ''}
               </LinkSection>
               <LinkSection>
-              {(igPost) ?
-                <a><details>
-                <summary><h3>Instagram Post</h3></summary>
-                <iframe src={igPostUrl} width="100%" height="380" theme="dark" frameborder="0" scrolling="yes" allowtransparency="true"><h3>Loading Instagram Profile...</h3></iframe>
-                </details></a>:''
-              }
+                {igPost ? (
+                  <details>
+                    <summary><h3>Instagram Post</h3></summary>
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                      <InstagramEmbed 
+                        url={igPostUrl} 
+                        width="100%"
+                      />
+                    </div>
+                  </details>
+                ) : null}
               </LinkSection>
               <LinkSection>
                 {tweet ? (
                   <details>
                     <summary><h3>𝕏 Tweets</h3></summary>
-                    {tweetId ? (
-                      <iframe
-                        src={`/tweet-embed?id=${tweetId}`}
+                    <div style={{ display: 'flex', justifyContent: 'center' }}>
+                      <TwitterEmbed 
+                        url={tweetUrl} 
                         width="100%"
-                        height="380"
-                        theme="dark"
-                        frameborder="0"
-                        scrolling="yes"
-                        allowtransparency="true"
                       />
-                    ) : (
-                      <h4>Loading...</h4>
-                    )}
+                    </div>
                   </details>
                 ) : null}
               </LinkSection>
